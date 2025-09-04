@@ -1,6 +1,6 @@
 import {type AuthResponse, type Task, TaskStatus, type User } from '../types';
 
-const API_BASE_URL = 'const API_URL = "https://manage-tasks-5a8676d50ead.herokuapp.com/api";';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 class ApiService {
     private token: string | null = localStorage.getItem('token');
